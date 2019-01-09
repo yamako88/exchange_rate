@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('index', 'ExchangeController@index')->name('index');
+Route::post('create', 'ExchangeController@create')->name('create');
